@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieWishList</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    <%= yield :jquery %>
+  });
+</script>
+
+</head>
+<body>
+<div class = "container">
+
+
+<h1><img id = "logo" src="/assets/logo.png" alt="" class="text-center"></h1>
+<div class="text-center">
+    <%if flash[:errors]%>
+    <%flash[:errors].each do |e|%>
+      <h3 style="color:#B11D2E;"><strong><%=e%></strong></h3>
+    <%end%>
+  <%end%>>
+</div>
+<%if current_user%>
+  <h4><strong>Hello, <%=current_user.first_name%></strong></h4>
+    <div class="text-center">
+        <%if flash[:errors]%>
+        <%flash[:errors].each do |e|%>
+          <h5 style="color:#B11D2E;"><%=e%></h5>
+        <%end%>
+      <%end%></h5>
+    </div>
+    <form action='/session' method='post'>
+      <input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+      <input type='hidden' name='_method' value='delete'>
+      <input type='submit' value='Log Out' class = "btn btn-danger">
+    </form>
+  <%else%>
+    </h1>
+  </div>
+  <%end%>
+<%= yield %>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+</body>
+</html>
