@@ -1,4 +1,5 @@
-# Mongoose-MovieWishList-Generator  
+# Mongoose-MovieWishList-Generator
+also refer to https://github.com/BitTigerInst/Mongoose-MovieWishList-Generator
 # Screenshot  
 ![alt tag](https://raw.githubusercontent.com/BitTigerInst/Mongoose-MovieWishList-Generator/master/screen.png)  
 # live on  
