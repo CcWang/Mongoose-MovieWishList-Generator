@@ -36,25 +36,12 @@ Third, we will use react to render the movie wish list for users. In this way, o
 [2016/02/08 - 2016/02/24] System Design, Resource Discovery, Project Implementation, Document Writing  
 [2016/02/25 - 2016/02/29] User Manual Writing and Video Presentation Making  
 Details of each schedule and task will be added later.  
-# Resource
-BitTiger Project list:  
-https://slack-files.com/T0GUEMKEZ-F0J4G9QTT-274d3bc97e  
-AppStore - Recommender:  
-https://www.dropbox.com/s/03b0u71zevvk7pw/20160103_AppStore%20Recommender.pdf?dl=0  
-https://www.youtube.com/watch?v=t1tSCbZxml4  
-Scrapy documentation:  
-http://scrapy.org/doc/  
-MongoDB documentation:  
-https://docs.mongodb.org/manual/  
-react:  
-https://www.dropbox.com/s/jmdveksujzp3utp/20160206React.mov?dl=0  
-https://www.dropbox.com/s/s1pnpkgzkoykbf9/20160206AppStoreinReact.pdf?dl=0  
+ 
 # Language & Framework  
 Ruby on Rails
-javascript,  
-python, scrapy framework(aborted),  
-mongoDB=>postgresql  
-react  
+JavaScript  
+Postgresql  
+React  
 # Owner
 @Team: Mongoose  
 @Contributers: xinyzhang9,CcWang
